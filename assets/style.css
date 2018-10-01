@@ -280,6 +280,7 @@ svg #wheel {
     .box {
         height: auto;
         margin-left: -25px;
+        margin-top: 50px;
        
     }
     hr{
@@ -298,8 +299,20 @@ svg #wheel {
 
      }
  }
+ @media screen and (max-width:550px){
 
+    .box{
+        margin-left: -30px;
+    }
 
+ }
+ @media screen and (max-width:350px){
+
+    .box{
+        margin-left: -35px;
+    }
+
+ }
 
   .slideanim{
     visibility: hidden;
