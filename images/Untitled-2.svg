@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#29ABE2;stroke-miterlimit:10;stroke-dasharray:12;}
+	.st1{fill:#29ABE2;}
+	.st2{fill:#FFFFFF;}
+</style>
+<circle class="st0" cx="49.5" cy="49.5" r="45">
+	<animateTransform attributeName = "transform"
+		attributeType = "xml"
+		type= "rotate"
+		from = " 0 50 50"
+		to = " 360 50 50"
+		dur = "10s"
+		repeatCount = "indefinite" />
+</circle>
+<circle class="st1" cx="50" cy="49" r="31"/>
+<path class="st2" d="M34,57L34,57c-1.1,0-2-0.9-2-2V45c0-1.1,0.9-2,2-2h0c1.1,0,2,0.9,2,2v10C36,56.1,35.1,57,34,57z">
+
+		<animateTransform id = "sfvfs"
+			attributeName = "transform"
+			attributeType = "xml"
+			type = "translate"
+			dur = "1s"
+			begin = ".1"
+			values = "0,6; 0,-6; 0,6"
+			repeatCount = "indefinite" />
+
+
+</path>
+<path class="st2" d="M40,57L40,57c-1.1,0-2-0.9-2-2V45c0-1.1,0.9-2,2-2h0c1.1,0,2,0.9,2,2v10C42,56.1,41.1,57,40,57z">
+
+	<animateTransform id = "sfvfs"
+			attributeName = "transform"
+			attributeType = "xml"
+			type = "translate"
+			dur = "1s"
+			values = "0,6; 0,-6; 0,6"
+			begin = ".2"
+			repeatCount = "indefinite" />
+
+</path>
+<path class="st2" d="M46,57L46,57c-1.1,0-2-0.9-2-2V45c0-1.1,0.9-2,2-2h0c1.1,0,2,0.9,2,2v10C48,56.1,47.1,57,46,57z">
+	<animateTransform id = "sfvfs"
+			attributeName = "transform"
+			attributeType = "xml"
+			type = "translate"
+			dur = "1s"
+			begin = ".3"
+			values = "0,6; 0,-6; 0,6"
+			repeatCount = "indefinite" />
+
+</path>
+<path class="st2" d="M52,57L52,57c-1.1,0-2-0.9-2-2V45c0-1.1,0.9-2,2-2h0c1.1,0,2,0.9,2,2v10C54,56.1,53.1,57,52,57z">
+	<animateTransform id = "sfvfs"
+			attributeName = "transform"
+			attributeType = "xml"
+			type = "translate"
+			dur = "1s"
+			begin = ".4"
+			values = "0,6; 0,-6; 0,6"
+			repeatCount = "indefinite" />
+
+</path>
+<path class="st2" d="M58,43L58,43c1.1,0,2,0.9,2,2v10c0,1.1-0.9,2-2,2h0c-1.1,0-2-0.9-2-2V45C56,43.9,56.9,43,58,43z">
+	<animateTransform id = "sfvfs"
+			attributeName = "transform"
+			attributeType = "xml"
+			type = "translate"
+			dur = "1s"
+			begin = ".5"
+			values = "0,6; 0,-6; 0,6"
+			repeatCount = "indefinite" />
+
+</path>
+<path class="st2" d="M65,43L65,43c1.1,0,2,0.9,2,2v10c0,1.1-0.9,2-2,2l0,0c-1.1,0-2-0.9-2-2V45C63,43.9,63.9,43,65,43z">
+	<animateTransform id = "sfvfs"
+			attributeName = "transform"
+			attributeType = "xml"
+			type = "translate"
+			dur = "1s"
+			begin = ".6"
+			values = "0,6; 0,-6; 0,6"
+			repeatCount = "indefinite" />
+
+</path>
+
+</svg>
