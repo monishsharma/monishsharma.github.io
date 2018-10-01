@@ -178,7 +178,7 @@ svg #wheel {
     text-align: center;
     font-size: 4vh;
     font-family: 'Merienda', cursive;
-    margin-top: 140px;  
+    
   }
 
   .intro p {
@@ -313,7 +313,13 @@ svg #wheel {
     }
 
  }
+ @media screen and (max-width:216px){
 
+    .intro h1 {
+
+    }
+
+ }
   .slideanim{
     visibility: hidden;
 }
