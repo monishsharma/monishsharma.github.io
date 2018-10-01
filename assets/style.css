@@ -16,8 +16,10 @@ body{
  
 
 }
+
 .sabkuch{
-    display: none;
+    display:none;
+   
 }
 
 .bg{
@@ -158,13 +160,17 @@ svg #wheel {
   }
   .section1 img {
       width: 50%;
-      height: auto; 
+      height: auto;
+      height: 100%; 
       
   }
   .intro {
       background-color: #8c43ff;
-      padding: 140px;
-      
+      height: 100%;
+      position: relative;
+      padding: 10px;
+      padding-top: 50px;
+      margin-bottom: 140px; 
   }
   .intro h1 {
 
@@ -172,7 +178,7 @@ svg #wheel {
     text-align: center;
     font-size: 4vh;
     font-family: 'Merienda', cursive;
-      
+    margin-top: 140px;  
   }
 
   .intro p {
