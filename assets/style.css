@@ -212,7 +212,7 @@ svg #wheel {
        float: left;
        width: 33.33%;
        padding: 10px;
-       height: 750px; /* Should be removed. Only for demonstration */
+      
        border-right: 1px solid #E6ECF8;
        border-left: 1px solid #E6ECF8;
    }
@@ -280,7 +280,7 @@ svg #wheel {
     .box {
         height: auto;
         margin-left: -25px;
-        margin-top: 50px;
+       margin-bottom: 100px;
        
     }
     hr{
