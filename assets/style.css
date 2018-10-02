@@ -191,9 +191,9 @@ svg #wheel {
 }
   
 .section2 {
-    background-color: white;
+    background-color: red;
     padding: 50px;
-    height: 115%;
+    height: 105%;
 }
 .box {
     border-radius: 10px;
@@ -313,13 +313,7 @@ svg #wheel {
     }
 
  }
- @media screen and (max-width:216px){
-
-    .intro h1 {
-
-    }
-
- }
+ 
   .slideanim{
     visibility: hidden;
 }
@@ -337,12 +331,128 @@ svg #wheel {
     }
 }
 
-
-/* Project */
-.project{
+.background {
 
 }
-.project h1{
-   text-align: center;
-    color: #000;
+/* Project */
+.work {
+  text-align: center;
+   font-family: 'Merienda', cursive;
+}
+.col-container {
+    display: flex;
+    width: 100%;
+    background:none;
+
+}
+.col {
+    flex: 1;
+    padding: 16px;
+}
+.col img{
+  width: 100%;
+}
+.content {
+    font-family: 'Merienda', cursive;
+  padding: 30px;
+
+}
+.btn1 {
+  padding: 14px 16px;
+  font-family: 'Merienda', cursive;
+  background-color: black;
+  color: white;
+  border: none;
+  left: 65px;
+  position: absolute;
+}
+.btn1:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+@media screen and (max-width:1326px)
+{
+  .work {
+    text-align: center;
+    position: relative;
+    left: -35%;
+  }
+} 
+ 
+@media screen and (min-width: 700px) and (max-width:800px) {
+  .background {
+    position: relative;
+    top: 200%;
+
+  }
+  .content {
+    font-size: 15px; 
+    padding: 10px;
+    float: left left;
+  }
+  .btn1 {
+    position: relative;
+    top: 0%;
+    left: 0px;
+    padding: 5px 7px;
+    
+  }
+  .work {
+    left: 0px;
+  }
+ }
+
+ @media screen and (max-width:650px) {
+  .col img {
+    width: 100%;
+  }
+ }
+ @media screen and (max-width: 700px) {
+  .col-container {
+    display: table;
+    bottom: 200%;
+    position: relative;
+  }
+  .work {
+    position: relative;
+    top: 1111px;
+    text-align: center;
+    left: 0%;
+  }
+  .content {
+    position: relative;
+    bottom: 150px;
+  }
+  .col {
+    flex: 0;
+  }
+  .btn1 {
+    position: relative;
+    bottom: 150px;
+    left: 30px;
+  }
+  .col img {
+    position: relative;
+    bottom: 100px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .work {
+    position: relative;
+     
+  }
+}
+@media screen and (max-width: 324px) {
+  .work {
+    position: relative;
+     
+  }
+  .background {
+    position: relative;
+    top: 200px;
+  }
+  .col {
+    position: relative;
+    bottom: 200px;
+  }
 }

@@ -1,9 +1,9 @@
 $(window).scroll(function() {
   $(".slideanim").each(function(){
     var pos = $(this).offset().top;
-    console.log(pos);
+ 
     var winTop = $(window).scrollTop();
-    console.log(winTop);
+ 
     if (pos < winTop + 500) {
       $(this).addClass("slide");
 
@@ -44,12 +44,24 @@ $(document).ready(function(){
   $(document).ready(function() {
 	
     setTimeout(function(){
-      $('.sabkuch').fadeIn(5000).css({display : "block"});
+      $('.sabkuch').fadeIn(0).css({display : "block"});
       $('#load').css({display : "none"});
-    }, 3000);
+    }, 0);
   });
  
 });
+
+
+
+$('.btn1').on('click',function(){
+  window.location.href =  " op5/zoom effect.html";
+})
+
+
+
+
+
+
 
 // $(document).ready(function(){
 
