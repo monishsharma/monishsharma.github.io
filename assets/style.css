@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    
+    overflow-x: hidden;   
   
   
 }
@@ -25,7 +25,6 @@ body{
 .bg{
     height: 100%;
    position: relative;
-   
    left: 50%;
    transform: translate(-50%,-50%);
    width: 30%;
@@ -168,9 +167,7 @@ svg #wheel {
       background-color: #8c43ff;
       height: 100%;
       position: relative;
-      padding: 10px;
-      padding-top: 50px;
-      margin-bottom: 140px; 
+      padding: 70px;   
   }
   .intro h1 {
 
@@ -178,12 +175,13 @@ svg #wheel {
     text-align: center;
     font-size: 4vh;
     font-family: 'Merienda', cursive;
+    padding: 50px;
     
   }
 
   .intro p {
     text-align: center;
-    font-size: 3.5vh;
+    font-size: 3vh;
     color: white;
     font-family: 'Merienda', cursive;
     margin-top: 50px;
@@ -191,7 +189,7 @@ svg #wheel {
 }
   
 .section2 {
-    background-color: red;
+    background-color: white;
     padding: 50px;
     height: 105%;
 }
@@ -201,7 +199,7 @@ svg #wheel {
     background-color: white;
     padding: 50px;
     position: relative; 
-    bottom: 300px;
+    bottom: 400px;
     height: 800px;
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
 
@@ -270,7 +268,7 @@ svg #wheel {
       line-height: 40px;
       font-size: 2vh;
   }
-  @media screen and (max-width:800px) {
+  /*@media screen and (max-width:800px) {
 
     .column {
         width: 100%;
@@ -312,7 +310,7 @@ svg #wheel {
         margin-left: -35px;
     }
 
- }
+ }*/
  
   .slideanim{
     visibility: hidden;
@@ -332,11 +330,12 @@ svg #wheel {
 }
 
 .background {
-
+  position: relative;
+  bottom: 190px;
 }
 /* Project */
 .work {
-  text-align: center;
+    text-align: center;
    font-family: 'Merienda', cursive;
 }
 .col-container {
@@ -354,75 +353,92 @@ svg #wheel {
 }
 .content {
     font-family: 'Merienda', cursive;
-  padding: 30px;
+    padding: 30px;
 
 }
 .btn1 {
   padding: 14px 16px;
   font-family: 'Merienda', cursive;
-  background-color: black;
+  background-color: #8c43ff;
   color: white;
   border: none;
-  left: 65px;
+  left: 45px;
   position: absolute;
 }
 .btn1:hover {
   opacity: .9;
   cursor: pointer;
 }
-@media only screen and (max-width: 600px){
+/*media only screen and (max-width: 600px){
   .background {
     position: relative;
-    top: 190%;
+    top: 120%;
   }
-  .work {
-    font-size: 2vw;
-  }
-  .content {
-    font-size:2vw;
-    padding: 0;
-  }
-  .btn1 {
-    padding: 6px 8px;
-    font-size: 2vw;
-    left: 15px;
-
-  }
- 
+ .col-container {
+  display: table;
+  bottom: 1300px;
+  position: relative;
+ }
+ .content{
+  padding: 0; 
+  position: relative;
+ }
+ .btn1{
+  float: left;
+  position: relative;
+  left: 10px;
+ }
 }
-@media only screen   and (max-width: 400px){
-  .background {
+@media only screen and (max-width: 600px){ 
+  .background{
     position: relative;
-    top: 200%;
+    top: 130%;
   }
- .col-container {
-  display: table;
- }
+
+}*/
+
+@media only screen and (max-width: 600px) {
+
+  .bg{
+    height: 50%;
   }
- 
-  @media only screen and (min-width: 330px)   and (max-width: 350px){
-  .background {
+  #mybtn{
     position: relative;
-    top: 215%;
+    right: 15px;
   }
- .col-container {
-  display: table;
- }
+  .intro h1{
+      font-size: 2.5vh;
   }
-   @media only screen and (min-width: 300px)   and (max-width: 330px){
-  .background {
+  .intro p {
+    font-size: 2vh;
+  }
+  .column {
+      width: 100%;
+  }
+  .box{
+    height: auto;
     position: relative;
-    top: 235%;
+    right: 0px;
+    left: 20px;
+    bottom: 400px;
+    width: 75%;
   }
- .col-container {
-  display: table;
- }
- /*  @media only screen   and (max-width: 300px){
-  .background {
+  .section2{
+    padding: 10px;
+  }
+   .background {
     position: relative;
-    top: 235%;
-  }
- .col-container {
-  display: table;
- }*/
-  /*}*/
+    top: 105%;
+   }
+    .col-container{
+      display: table;
+    }
+    .col{
+      position: relative;
+      bottom: 1400px;
+    }
+    .btn1{
+      text-align: center;
+      padding: 8px 10px;
+    }
+}  
