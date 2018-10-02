@@ -44,9 +44,9 @@ $(document).ready(function(){
   $(document).ready(function() {
 	
     setTimeout(function(){
-      $('.sabkuch').fadeIn(0).css({display : "block"});
+      $('.sabkuch').fadeIn(1000).css({display : "block"});
       $('#load').css({display : "none"});
-    }, 0);
+    }, 3000);
   });
  
 });
