@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 
 $('.btn1').on('click',function(){
-  window.location.href =  " op5/zoom effect.html";
+  window.location.href ="op5/index.html";
 })
 
 
