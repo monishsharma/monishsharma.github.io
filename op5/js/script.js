@@ -31,12 +31,12 @@
  var time =2000;
 
 
- images[0]='images/shoton/a (1).jpg';
- images[1]='images/shoton/a (2).jpg';
- images[2]='images/shoton/a (4).jpg';
- images[3]='images/shoton/a (5).jpg';
- images[4]='images/shoton/a (6).jpg';
- images[5]='images/shoton/a (8).jpg';
+ images[0]='image/shoton/a (1).jpg';
+ images[1]='image/shoton/a (2).jpg';
+ images[2]='image/shoton/a (4).jpg';
+ images[3]='image/shoton/a (5).jpg';
+ images[4]='image/shoton/a (6).jpg';
+ images[5]='image/shoton/a (8).jpg';
      
 
 
