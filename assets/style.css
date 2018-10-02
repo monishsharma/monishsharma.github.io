@@ -160,7 +160,7 @@ svg #wheel {
   .section1 img {
       width: 50%;
       height: auto;
-      height: 100%; 
+      
       
   }
   .intro {
@@ -173,7 +173,7 @@ svg #wheel {
 
     color: white;
     text-align: center;
-    font-size: 4vh;
+    font-size: 2vw;
     font-family: 'Merienda', cursive;
     padding: 50px;
     
@@ -181,7 +181,7 @@ svg #wheel {
 
   .intro p {
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.5vw;
     color: white;
     font-family: 'Merienda', cursive;
     margin-top: 50px;
@@ -189,11 +189,12 @@ svg #wheel {
 }
   
 .section2 {
+
     background-color: white;
     padding: 50px;
     height: 105%;
 }
-.box {
+.box {  
     border-radius: 10px;
     width: 90%;
     background-color: white;
@@ -268,49 +269,7 @@ svg #wheel {
       line-height: 40px;
       font-size: 2vh;
   }
-  /*@media screen and (max-width:800px) {
-
-    .column {
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .box {
-        height: auto;
-        margin-left: -25px;
-       margin-bottom: 100px;
-       
-    }
-    hr{
-        display:none;
-    }
-    .project{
-        position: relative;
-        top: 275%;
-    }
-
-  }
- @media screen and (max-width:796px){
-     .box1, .box2 {
-
-        overflow: hidden;
-
-     }
- }
- @media screen and (max-width:550px){
-
-    .box{
-        margin-left: -30px;
-    }
-
- }
- @media screen and (max-width:350px){
-
-    .box{
-        margin-left: -35px;
-    }
-
- }*/
+ 
  
   .slideanim{
     visibility: hidden;
@@ -329,14 +288,11 @@ svg #wheel {
     }
 }
 
-.background {
-  position: relative;
-  bottom: 190px;
-}
 /* Project */
 .work {
     text-align: center;
    font-family: 'Merienda', cursive;
+   font-size: 3vh;
 }
 .col-container {
     display: flex;
@@ -354,6 +310,7 @@ svg #wheel {
 .content {
     font-family: 'Merienda', cursive;
     padding: 30px;
+    font-size: 3vh;
 
 }
 .btn1 {
@@ -369,76 +326,58 @@ svg #wheel {
   opacity: .9;
   cursor: pointer;
 }
-/*media only screen and (max-width: 600px){
-  .background {
-    position: relative;
-    top: 120%;
-  }
- .col-container {
-  display: table;
-  bottom: 1300px;
-  position: relative;
- }
- .content{
-  padding: 0; 
-  position: relative;
- }
- .btn1{
-  float: left;
-  position: relative;
-  left: 10px;
- }
-}
-@media only screen and (max-width: 600px){ 
-  .background{
-    position: relative;
-    top: 130%;
-  }
 
-}*/
+@media screen and (max-width: 600px) {
+  .work{  
 
-@media only screen and (max-width: 600px) {
-
-  .bg{
-    height: 50%;
+font-size: 2vh;
   }
-  #mybtn{
-    position: relative;
-    right: 15px;
+  .col-container {
+    display: table;
   }
-  .intro h1{
-      font-size: 2.5vh;
-  }
-  .intro p {
-    font-size: 2vh;
-  }
-  .column {
-      width: 100%;
+  .section{
+    width: 100%;
   }
   .box{
+    display: block;
+    width: 100%;
     height: auto;
-    position: relative;
-    right: 0px;
-    left: 20px;
-    bottom: 400px;
-    width: 75%;
+    bottom: 200px;
+    float: left;
+    left: auto;
+    right: 0;
+    padding: 14px 16px;
   }
-  .section2{
-    padding: 10px;
+  .column {
+    width: 100%;
+    float: left;
+    right: 0;
+    padding: 0;
+    display: table;
   }
-   .background {
-    position: relative;
-    top: 105%;
-   }
-    .col-container{
-      display: table;
-    }
-    .col{
-      position: relative;
-      bottom: 1400px;
-    }
-    .btn1{
-      text-align: center;
-      padding: 8px 10px;
-    }
-}  
+  .intro{
+    padding: 5px;
+    text-align: center;
+    height: auto;
+  }
+  .intro h1{
+    display: table;
+    font-size: 4vw;
+  }
+  .intro p {
+    display: flex;
+    font-size: 3.5vw;
+  }
+  .work {
+    margin-bottom: 0;
+  }
+  .content{
+    font-size: 2vh;
+    padding: 15px;
+  }
+  .btn1{
+    padding: 8px 10px;
+
+  
+  }
+}
