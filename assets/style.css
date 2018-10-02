@@ -344,7 +344,7 @@ font-size: 2vh;
     height: auto;
     bottom: 200px;
     float: left;
-    left: auto;
+    left: -15px;
     right: 0;
     padding: 14px 16px;
   }
