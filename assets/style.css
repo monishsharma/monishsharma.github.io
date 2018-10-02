@@ -388,4 +388,12 @@ svg #wheel {
     left: 15px;
 
   }
+ 
 }
+@media only screen and (max-width: 400px){
+
+  .background {
+    position: relative;
+    top: 200%;
+  }
+  }
