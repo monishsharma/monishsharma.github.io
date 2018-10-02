@@ -373,7 +373,7 @@ svg #wheel {
 @media only screen and (max-width: 600px){
   .background {
     position: relative;
-    top: 185%;
+    top: 190%;
   }
   .work {
     font-size: 2vw;
