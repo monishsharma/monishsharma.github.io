@@ -419,13 +419,17 @@ font-size: 2vh;
 
 @media only screen and (min-width: 1200px) {
   .work{
-    display: table;
-    text-align:  center;
+     display: block;
+      text-align:  center;
      font-size: 2vh;
-      padding: 25px;
-     bottom: 20px;
+    
+
   }
   .col-container {
     display: flex;
+  }
+  .column {
+    width: 33.33%;
+    bottom: 0;
   }
 }
