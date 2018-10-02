@@ -390,10 +390,39 @@ svg #wheel {
   }
  
 }
-@media only screen and (max-width: 400px){
-
+@media only screen   and (max-width: 400px){
   .background {
     position: relative;
     top: 200%;
   }
+ .col-container {
+  display: table;
+ }
   }
+ 
+  @media only screen and (min-width: 330px)   and (max-width: 350px){
+  .background {
+    position: relative;
+    top: 215%;
+  }
+ .col-container {
+  display: table;
+ }
+  }
+   @media only screen and (min-width: 300px)   and (max-width: 330px){
+  .background {
+    position: relative;
+    top: 235%;
+  }
+ .col-container {
+  display: table;
+ }
+ /*  @media only screen   and (max-width: 300px){
+  .background {
+    position: relative;
+    top: 235%;
+  }
+ .col-container {
+  display: table;
+ }*/
+  /*}*/
