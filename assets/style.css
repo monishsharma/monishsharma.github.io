@@ -381,3 +381,45 @@ font-size: 2vh;
   
   }
 }
+
+@media only screen and (min-width: 600px){
+
+   .intro h1{  
+    font-size: 3vh;
+  }
+  .intro p {
+    font-size: 3vh;
+  }
+  .box{
+    display: block;
+    width: 90%;
+    height: auto;
+    right: 0;
+    float: left;
+    bottom: 250px;
+    left: -25px;
+  }
+  .column {
+    width: 100%;
+    bottom: 0;
+    display: table;
+    top: 0;
+  }
+  .col-container{
+   display: table;
+  }
+
+}
+@media only screen and (min-width: 768px){
+
+  .box{
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .work{
+     font-size: 3vh;
+     bottom: 20px;
+  }
+}
