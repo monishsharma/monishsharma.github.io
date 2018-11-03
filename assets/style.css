@@ -326,6 +326,25 @@ svg #wheel {
   opacity: .9;
   cursor: pointer;
 }
+.btn2 {
+  padding: 14px 16px;
+  font-family: 'Merienda', cursive;
+  background-color: #8c43ff;
+  color: white;
+  border: none;
+  left: 45px;
+  position: absolute;
+}
+.btn2:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  z-index: 1;
+}
 
 @media screen and (max-width: 600px) {
   .work{  
