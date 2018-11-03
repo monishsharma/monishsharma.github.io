@@ -57,7 +57,7 @@ $('.btn1').on('click',function(){
   window.location.href ="op5/index.html";
 })
 $('.btn2').on('click',function(){
-  window.location.href ="sp/index.html";
+  window.location.href ="assets/index.html";
 })
 
 

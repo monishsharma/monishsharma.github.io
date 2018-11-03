@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmartPrix</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/w3.css">
+ 
+</head>
+<body>
+
+
+
+<!--hidden na -->
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  		<i style="background-color: transparent; text-decoration: none;  margin:10px; font-size: 40px; cursor: pointer;" class="fa fa-facebook"></i>
+  		<i style="background-color: transparent; text-decoration: none; margin:10px; font-size: 40px;  cursor: pointer;" class="fa fa-instagram"></i>
+  		<i style="background-color: transparent; text-decoration: none; margin:10px; font-size: 40px;  cursor: pointer;" class="fa fa-envelope"></i>
+  		<i style="background-color: transparent; text-decoration: none;  margin:10px;font-size: 40px;  cursor: pointer;" class="fa fa-linkedin"></i>
+   		<button  data-btn = "btn1" class="btn current ">Home</button>
+		<button  data-btn = "btn2" class="btn">Login/Signup</button>
+		<button  data-btn = "btn3" class="btn">Mobile</button>
+		<button  data-btn = "btn4" class="btn">Laptop</button>
+		 
+  </div>
+</div>
+
+<!-- dropdown -->
+ 
+ <div   class="navbar">
+ 
+  <a href="#home"><span id="hamburger"  onclick="openNav()">&#9776; </span></a>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">Mobile 
+      <i style="color: white;" class="fa fa-caret-down"></i>
+    </button>
+    <div id="dd1" class="dropdown-content">
+      <div class="header">
+        <h2>SmartPrix</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Brands</h3>
+          <a href="#">Apple</a>
+          <a href="#">Nokia</a>
+          <a href="#">OnePlus</a>
+          <a href="#">HTC</a>
+          <a href="#">Oppo</a>
+          <a href="#">Mi</a>
+          <a href="#">Micromax</a>
+          <a href="#">Sony</a>
+          <a href="#">Motorola</a>
+        </div>
+        <div class="column">
+          <h3>Categories</h3>
+          <a href="#">Smart Phones</a>
+          <a href="#">Android Phones</a>
+          <a href="#">Apple iPhones</a>
+          <a href="#">3G Phones</a>
+          <a href="#">4G phones</a>
+          <a href="#">Dual Sim phones</a>
+          <a href="#">4Gb Ram phones</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Price</h3>
+          <a href="#">Less than ₹5,000 </a>
+          <a href="#">₹5,000 to ₹10,000</a>
+          <a href="#">₹10,000 to ₹15,000</a>
+          <a href="#">₹20,000 to ₹20,000</a>
+          <a href="#">More than ₹20,000</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Laptop 
+      <i style="color: white;" class="fa fa-caret-down"></i>
+    </button>
+    <div  class="dropdown-content">
+      <div class="header">
+        <h2>SmartPrix</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Category 1</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 2</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 3</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+   <div id="filter" class="dropdown">
+    <button class="dropbtn">Filter 
+      <i style="color: white;" class="fa fa-caret-down"></i>
+    </button>
+    <div  class="dropdown-content">
+      <div class="header">
+        <h2>SmartPrix</h2>
+      </div>   
+      <div class="row"> 
+        <div class="column">
+          <h3>Brand</h3>
+          <a href="#"><input type="checkbox"> Asus</a>
+          <a href="#"><input type="checkbox"> Apple</a>
+          <a href="#"><input type="checkbox"> Blackberry</a>
+          <a href="#"><input type="checkbox"> Google</a>
+          <a href="#"><input type="checkbox"> Mi</a>
+          <a href="#"><input type="checkbox"> Motorola</a>
+          <a href="#"><input type="checkbox"> Nokia</a>
+          <a href="#"><input type="checkbox"> Oneplus</a>
+          <a href="#"><input type="checkbox"> Oppo</a>
+        </div>
+        <div class="column">
+          <h3>Price Range</h3>
+          <a href="#"><input type="checkbox"> Below ₹1,000 </a>
+          <a href="#"><input type="checkbox"> ₹1,000 - ₹2,000</a>
+          <a href="#"><input type="checkbox"> ₹2,000 - ₹5,000</a>
+          <a href="#"><input type="checkbox"> ₹5,000 - ₹10,000</a>
+          <a href="#"><input type="checkbox"> ₹10,000 - ₹15,000</a>
+          <a href="#"><input type="checkbox"> ₹15,000 - ₹20,000</a>
+          <a href="#"><input type="checkbox"> ₹20,000 - ₹25,000</a>
+          <a href="#"><input type="checkbox"> Above ₹25,000</a>
+         
+        </div>	
+      </div>
+    </div>
+  </div> 
+
+</div>
+	 
+<!-- homepage -->
+<div id="btn1"  class="homepage sec1 current">
+	<center> <img  src="images/sm_small.png"></center>
+		<center><h1 style="margin-top: 35px; color: white;font-weight: 600;line-height: 1;letter-spacing: 5px;">Find a mobile that suits you</h1></center>
+	<div class="compare">
+		<ul class="nav">
+
+			<li class="button-dropdown">
+    <span class="custom-dropdown big">
+    <select>    
+        <option>Choose Model</option>
+        <option>Apple</option>  
+        <option>OnePlus</option>
+        <option>Vivo</option>
+        <option>Htc</option>
+    </select>
+</span>
+  		</li>
+
+  <li class="button-dropdown">
+     
+ <span class="custom-dropdown big">
+    <select>    
+    	<option>Budget</option>
+        <option> Less than ₹5,000</option>
+        <option>More than ₹10,000</option>  
+        <option> More than ₹15,000</option>
+        <option>More than ₹25,000</option>
+        <option> More than ₹50,000</option>
+    </select>
+</span>
+  </li>
+    <li class="button-dropdown">
+    <span class="custom-dropdown big">
+    <select>    
+        <option>Camera </option>
+        <option>16megapixel front</option>  
+        <option>16megapixel front</option>
+        <option>16megapixel front</option>
+        <option>16megapixel front</option>
+    </select>
+</span>
+<button class="find"> Search</button>
+</ul>
+</div><br><br><br><br><br><br><br><br><br><br>
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-panel w3-display-container w3-blue" id="projects">
+    <h3 >More Products  <span><button class="w3-btn w3-black w3-right w3-medium  w3-hover-opacity">See More</button></span></h3>
+   
+  </div>
+</div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom w3-hover-opacity w3-hover-opacity"  style="cursor: pointer;">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Mobiles</div>
+        <img src="images/mobiles.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom w3-hover-opacity" style="cursor: pointer;">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Tablets</div>
+        <img src="images/tablet.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom w3-hover-opacity" style="cursor: pointer;">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Laptop</div>
+        <img src="images/lappy.jpg" alt="House" style="width:100%" style="cursor: pointer;">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom w3-hover-opacity" style="cursor: pointer;">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Television</div>
+        <img src="images/tele.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+ 
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-panel w3-display-container w3-blue" id="projects">
+    <h3 >Popular Mobiles  <span><button class="w3-btn w3-black w3-right w3-medium  w3-hover-opacity">See More</button></span></h3>
+   
+  </div>
+
+<div class="w3-rest w3-col m8 l9">
+  <div class="w3-quarter">
+    <div class="w3-card w3-small">
+      <img src="images/pixel.png" style="width:100%">
+      <Div class="w3-container">
+        <h5>Pixel</h5>
+        <p>$900</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card w3-small">
+      <img class="w3-small" src="images/pixel.png" style="width:100%">
+      <div class="w3-container">
+        <h5>Pixel</h5>
+        <p>$900</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card">
+      <img src="images/pixel.png" style="width:100%">
+      <div class="w3-container">
+        <h5>Pixel</h5>
+        <p>$900</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card">
+      <img src="images/pixel.png" style="width:100%">
+      <div class="w3-container">
+        <h5>Pixel</h5>
+        <p>$900</p>
+      </div>
+    </div>
+  </div>
+</div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Noida, In<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 48411848<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+ 
+ 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- Page content -->
+
+ 
+
+<div  id="btn2" class="login sec1">
+			<div id="main">
+            <table class="table1" border="0" cellspacing="10">
+                <tr>
+                    <td>
+                        <div id="title">SIGN IN</div>
+                        <hr size="1px" width="100px" color="black"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="signup" type="text" placeholder="USER ID"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="signup" type="password" placeholder="PASSWORD"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <div id="frt">FORGOT PASSWORD</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input class="signup" type="submit" value="SIGN IN" id="signInBtn"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="signUpMsg">DON'T HAVE AN ACCOUNT <a href="#" id="flipToSignUp">SIGN UP</a></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="signUpForm">
+            <table class="table1" border="0" cellspacing="10">
+                <tr>
+                    <td>
+                        <div id="title">SIGN UP</div>
+                        <hr size="1px" width="100px" color="black"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="signup" type="text" placeholder="FULL NAME"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input  class="signup"  type="email" placeholder="EMAIL ID"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="signup" type="password" placeholder="PASSWORD"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input class="signup" type="submit" value="SIGN UP" id="signUpBtn"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="signInMsg">HAVE AN ACCOUNT <a href="#" id="flipToSignIn">SIGN IN</a></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</div>
+<!--mobile section -->
+
+<div  id="btn3" class="mobilesection sec1">
+	<div  class="row">
+  		<div class="column1">
+  			<h1 style="text-align: center; padding-top: 50px;">Mobiles(click on compare button)</h1>
+    		<div class="card">
+  				<img src="images/OnePlus.png" alt="oneplus6" style="width:100%">
+  				<h1>OnePlus 6</h1>
+  				<p class="price">₹ 35,000</p>
+  				<ul style="margin:20px;">
+  					<li > Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/iPhone.png" alt="iphone x" style="width:100%">
+  				<h1>iPhone</h1>
+  				<p class="price">₹ 70,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/ss.png" alt="s9" style="width:100%">
+  				<h1>Galaxy S9</h1>
+  				<p class="price">₹ 55,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/pixel.png" alt="s9" style="width:100%">
+  				<h1>Google pixel 2</h1>
+  				<p class="price">₹ 42,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/note.png" alt="s9" style="width:100%">
+  				<h1>Galaxy Note 9</h1>
+  				<p class="price">₹ 65,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/nokia.png" alt="s9" style="width:100%">
+  				<h1>Nokia 6.1 plus</h1>
+  				<p class="price">₹ 16,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+		</div>
+  	</div>
+  		
+</div>
+
+
+	
+	
+
+<!-- laptop -->
+<div id="btn4" class="laptop sec1">
+
+		<div  class="row">
+  		<div  class="column1">
+  			<h1 style="text-align: center; padding-top: 50px;">Laptop</h1>
+    		<div class="card">
+  				<img src="images/macbook.png" alt="oneplus6" style="width:100%">
+  				<h1>Macbook Pro</h1>
+  				<p class="price">₹ 2,10,000</p>
+  				<ul style="margin:20px;">
+  					<li > Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/hp.png" alt="iphone x" style="width:100%">
+  				<h1>Hp X360</h1>
+  				<p class="price">₹ 80,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/dell.png" alt="s9" style="width:100%">
+  				<h1>Dell inspiration</h1>
+  				<p class="price">₹ 65,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/alien.png" alt="s9" style="width:100%">
+  				<h1>Alienware</h1>
+  				<p class="price">₹ 92,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/surface.png" alt="s9" style="width:100%">
+  				<h1>Microsoft Surface 4</h1>
+  				<p class="price">₹ 65,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+			 <div class="card">
+  				<img src="images/asus.png" alt="s9" style="width:100%">
+  				<h1>Asus</h1>
+  				<p class="price">₹ 58,000</p>
+  				<ul style="margin:20px;">
+  					<li> Dual Sim, VoLTE, 4G, 3G, Wi-Fi, NFC</li>
+  					<li>  6.28 inches, 1080 x 2280 px Display</li>
+  					<li> Octa Core, 2.8 GHz Processor </li>
+   					<li>  16 MP Dual Rear + 16 MP Front Camera</li>
+   				 	<li> 8 GB RAM, 128 GB inbuilt</li>
+   					<li> Memory Card Not Supported</li>
+
+  				</ul>
+  				<p><button>Add to Cart</button></p>
+  				<p><button class="myBtn">Compare</button></p>
+			</div>
+		</div>
+  	</div>
+
+	
+</div>
+
+<!-- modal -->
+ 
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   	<div class="container">
+		<ul class="tabs">
+			<li class="tab-link current" data-tab="tab-1">Compare</li>
+			<li class="tab-link" data-tab="tab-2">Specifications</li>
+			<li class="tab-link" data-tab="tab-3">Expert Review</li>
+			<li class="tab-link" data-tab="tab-4">User Review</li>
+		</ul>
+
+	<div id="tab-1" class="tab-content current">
+		<table width="100%" height="100%" border="0">
+  			<tr>
+    			<td><h3>Seller</h3></td>
+   				<td><h3>Seller Rating </h3></td>
+   			 	<td><h3>Shipping </h3></td>
+    			<td><h3>Price </h3></td>
+    			<td><h3>Details </h3></td>
+  			</tr>
+  			<tr>
+    			<td><img style="width: 50px ;height:50px;"  src="images/amazon.png"></td>
+    			<td><i class="fa fa-star "></i>	<i class="fa fa-star "></i>	<i class="fa fa-star "></i>	<i class="fa fa-star "></i> <i class="fa fa-star-half-empty "></i></td>
+    			<td><p>Shipping Free</p></td>
+    			<td class="p1">₹30,999</td>
+    			<td><button class="shop">Shop Now</button></td>
+  			</tr>
+  			<tr>
+   				<td><img style="width: 50px ;height:50px;"  src="images/paytm.png"></td>
+    			<td><i class="fa fa-star "></i>	<i class="fa fa-star "></i>	<i class="fa fa-star "></i>	<i class="fa fa-star "></i> <i class="fa fa-star-half-empty "></i></td>
+    			<td><p>Shipping Free</p>;</td>
+    			<td class="p2">₹39,900</td>
+    			<td><button class="shop">Shop Now</button></td>
+  			</tr>
+  			<tr>
+    			<td><img style="width: 50px ;height:50px;"  src="images/flip.png"></td>
+    			<td><i class="fa fa-star "></i>	<i class="fa fa-star "></i>	<i class="fa fa-star "></i>	<i class="fa fa-star "></i> <i class="fa fa-star "></i></td>
+    			<td><p>Shipping Free</p></td>
+    			<td class="p3">₹40,999</td>
+    			<td><button class="shop">Shop Now</button></td>
+  			</tr>
+  			<tr>
+    			<td><img style="width: 50px ;height:50px;"  src="images/tata.png"></td>
+    			<td><i class="fa fa-star "></i>	<i class="fa fa-star "></i>	<i class="fa fa-star "></i> <i class="fa fa-star-half-empty "></i></td>
+    			<td><p>Shipping Free</p></td>
+    			<td class="p4">₹38,999</td>
+    			<td><button class="shop">Shop Now</button></td>
+  			</tr>
+		</table>
+	</div>
+	<div id="tab-2" class="tab-content">
+		<button class="accordion">General</button>
+			<div class="panel">
+  				<p>Quick charging</p><br>
+  				<p class="Android">Operating system - ios 11.1</p><br>
+  				<p>Single Sim slot</p><br>
+			</div>
+
+			<button class="accordion">Display</button>
+			<div class="panel">
+  				<p>Display Type	OLED</p><br>
+  				<p>Aspect Ratio	18:9</p><br>
+  				<p>Screen Size	5.8 inches (14.73 cm)</p><br>
+  			</div>
+			<button class="accordion">Camera</button>
+			<div class="panel">
+				<p>Settings	Exposure compensation, ISO control</p><br>
+  				<p>Image Resolution	4000 x 3000 Pixels</p><br>
+  				<p>Resolution	7 MP Front Camera</p><br>
+			</div>
+	</div>
+	<div id="tab-3" class="tab-content">
+		 <div class="container">
+  			<img src="images/a1.jpg" alt="Avatar" style="width:100%;">
+  			<p>Screen is too good!</p>
+  			<span class="time-right">11:00</span>
+		</div>
+		<div class="container">
+  			<img src="images/a2.jpg" alt="Avatar" style="width:100%;">
+  			<p>You  will never find the better camera than in this phone</p>
+  			<span class="time-right">13:00</span>
+		</div>
+		<div class="container">
+  			<img src="images/a3.png" alt="Avatar" style="width:100%;">
+  			<p>The best processor till now</p>
+  			<span class="time-right">15:00</span>
+		</div>
+		<div class="container">
+  			<img src="images/a4.png" alt="Avatar" style="width:100%;">
+  			<p>More than a Phone</p>
+  			<span class="time-right">20:00</span>
+		</div>
+		<div class="container">
+  			<img src="images/a1.jpg" alt="Avatar" style="width:100%;">
+  			<p>Huge battery backup</p>
+  			<span class="time-right">07:00</span>
+		</div>
+
+	</div>	 
+	<div id="tab-4" class="tab-content">
+		  <div class="container">
+  			<img src="images/a1.jpg" alt="Avatar" style="width:100%;">
+  			<p>best phone till now</p>
+  			<span class="time-right">11:00</span>
+		</div>
+		<div class="container">
+  			<img src="images/a2.jpg" alt="Avatar" style="width:100%;">
+  			<p>so expensive</p>
+  			<span class="time-right">13:00</span>
+		</div>
+		<div class="container">
+  			<img src="images/a3.png" alt="Avatar" style="width:100%;">
+  			<p>Gaming phone</p>
+  			<span class="time-right">15:00</span>
+		</div>
+		<div class="container">
+  			<img src="images/a4.png" alt="Avatar" style="width:100%;">
+  			<p>More than a Phone</p>
+  			<span class="time-right">20:00</span>
+		</div>
+		<div class="container">
+  			<img src="images/a1.jpg" alt="Avatar" style="width:100%;">
+  			<p>so handy</p>
+  			<span class="time-right">07:00</span>
+		</div>
+	</div>
+
+</div> 
+</div>
+</div>
+</div>
+
+  
+
+ 
+ 
+
+
+
+ 
+<script src="js/login.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
